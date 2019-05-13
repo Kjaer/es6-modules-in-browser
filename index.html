@@ -1,30 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Sticky Footer Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer/">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
   </head>
-  <body>
-    <div class="container">
-        <h1>Hello, ES6 Modules!</h1>
+  <body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <h1 class="mt-5">Hello, ES6 Modules!</h1>
         <hr/>
-        <p>
-            This page is basically using ES6 classes with using <code>import</code> them.<br/>
-            it will be useful trick when you need something quickly without setting up babel etc.
-        </p>
-    </div>
+        <p class="lead">This page is basically using ES6 classes with using <code>import</code> them.</p>
+        <p>it will be useful trick when you need something quickly without setting up babel etc.</p>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <p class="text-muted">to make <code>import</code> work in chrome it needs some experiment activation</p>
+        <ol class="text-muted">
+          <li>Navigate <a href="chrome://flags/#enable-experimental-web-platform-features">chrome://flags</a></li>
+          <li>Search <strong><em>Experimental Web Platform features</em></strong></li>
+          <li>Enable it.</li>
+        </ol>
+      </div>
+    </footer>
 
     <script type="module">
-        import Test from './test.js';
+      import Test from './test.js';
 
-        const test = new Test("Halil");
-        test.sayHi();
+      const test = new Test("Halil");
+      test.sayHi();
     </script>
   </body>
 </html>
