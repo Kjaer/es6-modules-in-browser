@@ -1,5 +1,5 @@
 export default class AlertMessage {
-    boost(message) {
+    splash(message) {
         alert(message);
     }
 }
