@@ -34,4 +34,4 @@ Add run commands and examples you think users will find useful. Provide an optio
 
 ## Contact
 
-If you want to contact me you can reach me at [https://twitter.com/halilkayer](@halilkayer).
+If you want to contact me you can reach me at [@halilkayer](https://twitter.com/halilkayer).
