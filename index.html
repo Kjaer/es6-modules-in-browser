@@ -11,6 +11,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/public/caniuse-embed.min.js"></script>
   </head>
   <body class="d-flex flex-column h-100">
     <!-- Begin page content -->
@@ -24,12 +26,22 @@
       </div>
 
       <div class="container">
-        <h3 class="mt-5 mb-4">Go test it out yourself!</h3>
+        <h5 class="mt-5 mb-4">Go test it out yourself!</h5>
         <button type="button" class="btn btn-primary" id="hi-button"> say Hi!</button>
         <p class="text-muted font-weight-lighter mt-2">
           don't forget to check <mark>console</mark>
         </p>
       </div>
+
+      <hr class="mt-5 mb-5"/>
+      <div class="container ciu_embed" data-feature="es6-module" data-periods="future_1,current,past_1,past_2" data-accessible-colours="false">
+          <a href="http://caniuse.com/#feat=es6-module">
+            <picture>
+              <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/es6-module.webp">
+              <img src="https://caniuse.bitsofco.de/image/es6-module.png" alt="Data on support for the es6-module feature across the major browsers from caniuse.com">
+            </picture>
+          </a>
+        </div>
     </main>
 
     <footer class="footer mt-auto py-3">
