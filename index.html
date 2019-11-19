@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Sticky Footer Template · Bootstrap</title>
+    <title>ES6 Modules in Browsers</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer/">
 
@@ -19,19 +18,27 @@
       <div class="container">
         <h1 class="mt-5">Hello, ES6 Modules!</h1>
         <hr/>
-        <p class="lead">This page is basically using ES6 classes with using <code>import</code> them.</p>
-        <p>it will be useful trick when you need something quickly without setting up babel etc.</p>
+        <p class="lead">This page is basically using ES6 classes without transpiling or converting them with third party tools like babel, broccoli.
+           It uses <code>import</code> them.</p>
+        <p>I prepare this page when I am trying out something and doesn't feel like bother myself setting up asset pipeline boiler plate.</p>
+      </div>
+
+      <div class="container">
+        <h3 class="mt-5 mb-4">Go test it out yourself!</h3>
+        <button type="button" class="btn btn-primary" id="hi-button"> say Hi!</button>
+        <p class="text-muted font-weight-lighter mt-2">
+          don't forget to check <mark>console</mark>
+        </p>
       </div>
     </main>
 
     <footer class="footer mt-auto py-3">
       <div class="container">
-        <p class="text-muted">to make <code>import</code> work in chrome it needs some experiment activation</p>
-        <ol class="text-muted">
-          <li>Navigate <a href="chrome://flags/#enable-experimental-web-platform-features">chrome://flags</a></li>
-          <li>Search <strong><em>Experimental Web Platform features</em></strong></li>
-          <li>Enable it.</li>
-        </ol>
+        <p class="text-muted">Any feedback appreciated!</p>
+        <p>
+          Find me on twitter → <a href="https://www.twitter.com/halilkayer" target="_blank">@halilkayer</a> <br/>
+          Find me on github → <a href="https://www.github.com/kjaer" target="_blank">@kjaer</a>
+        </p>
       </div>
     </footer>
 
@@ -40,7 +47,10 @@
 
       const greeting = new Greeting("Halil");
       greeting.sayHi();
-      greeting.alertHi();
+
+      document.querySelector("#hi-button").addEventListener("click", ()=> {
+        greeting.alertHi();
+      })
     </script>
   </body>
 </html>
