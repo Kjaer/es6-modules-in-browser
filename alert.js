@@ -1,5 +1,9 @@
 export default class AlertMessage {
-    splash(message) {
+    constructor() {
+        this.defaultSplash = "Who's there?"
+    }
+
+    splash(message = this.defaultSplash) {
         alert(message);
     }
 }
